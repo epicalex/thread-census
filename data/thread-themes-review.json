@@ -1,0 +1,896 @@
+{
+  "method": "Editorial review of the 173 previously context-reviewed event summaries, assigning one primary topic per moment. All 31 literal-pull speaking turns were also reread. Categories are interpretive, not validated statistical clusters. AI takes priority when it is the central context, so the topic totals depend on this taxonomy.",
+  "themes": {
+    "ai": {
+      "label": "AI and the changing shape of work",
+      "definition": "AI is the main context or mechanism: tools, models, roles, organization, competition or societal effects. This broad bucket includes AI-related career and growth questions."
+    },
+    "teams": {
+      "label": "How teams and leaders work",
+      "definition": "Hiring, incentives, culture, communication, organization and operational leadership outside an explicitly AI-centered question."
+    },
+    "growth": {
+      "label": "Growth, experiments and product-market fit",
+      "definition": "Acquisition, retention, monetization, experiments, metrics and product-market fit; AI-centered mechanisms go in AI."
+    },
+    "craft": {
+      "label": "Product judgment and building",
+      "definition": "Product judgment, discovery, strategy and building practices, excluding explicitly AI-centered questions and growth experiments."
+    },
+    "career": {
+      "label": "Careers, learning and personal growth",
+      "definition": "Individual career choices, skills, learning, wellbeing and personal development; explicitly AI-focused questions go in AI."
+    },
+    "founders": {
+      "label": "Startups, markets and founder choices",
+      "definition": "Founder survival, financing, markets, company formation and competitive positioning outside the explicitly AI-centered questions."
+    }
+  },
+  "assignments": {
+    "aishwarya-naresh-reganti--kiriti-badam.md@00:07:37": {
+      "theme": "ai",
+      "text_sha256": "3aa0c695ea29888b08e1d6df5baf78ee78b5ca95ceaa6a8029a5a074967f6313",
+      "summary": "The two major differences between building AI and conventional products."
+    },
+    "albert-cheng.md@00:16:34": {
+      "theme": "ai",
+      "text_sha256": "9cedd7403040189d5d202338ec7a9407357a84c325b3c74ceddd49a2fce08615",
+      "summary": "Using AI to analyze experiments and answer ad hoc data questions."
+    },
+    "alex-komoroske.md@00:20:48": {
+      "theme": "ai",
+      "text_sha256": "f368e67a89b2272d437574f6af67bf11cf85a337e6c9cbd3c419390ba60260f7",
+      "summary": "Concrete everyday uses of Claude and other AI tools."
+    },
+    "amjad-masad.md@00:25:05": {
+      "theme": "ai",
+      "text_sha256": "92feacd333e3c007e02c8bf1b4db4573652e9929c144ba632655845cdf1b2efc",
+      "summary": "How nontechnical people at startups and larger companies use AI development tools."
+    },
+    "amol-avasare.md@00:14:43": {
+      "theme": "ai",
+      "text_sha256": "da1c40d2a39fcb9675bce179468bb0e7d1a0ea19a4b7dac910f662013a158868",
+      "summary": "Helping AI users reach an activation or aha moment despite unreliable outputs."
+    },
+    "andrew-wilkinson.md@00:48:02": {
+      "theme": "ai",
+      "text_sha256": "6f1cc80fec9a3ab67ae5a7c43b72413631fbc40231390537ac6b0df8f30c615d",
+      "summary": "AI assistants replacing routine work; first exploring Andrew’s other useful AI tools."
+    },
+    "andrew-wilkinson.md@00:54:37": {
+      "theme": "ai",
+      "text_sha256": "f4a111b4ffe3579e716e1814eabf2ed3108e641f137b9392274cbb0999460312",
+      "summary": "How AI tools displace jobs and human assistants."
+    },
+    "anish-acharya-2.md@00:36:15": {
+      "theme": "ai",
+      "text_sha256": "8b2e7ff5cdaaa62dd9e7fc53e953727fcdfc2eded233d4408471fe78950d4992",
+      "summary": "Why AI could make the future more optimistic than people expect."
+    },
+    "anton-osika.md@00:19:05": {
+      "theme": "ai",
+      "text_sha256": "11874edd2a6defaa32a704156f6f52166be7406a3d48e5339d07bb018e800dfb",
+      "summary": "The most useful tip for a first-time Lovable user."
+    },
+    "aparna-chennapragada.md@00:13:29": {
+      "theme": "ai",
+      "text_sha256": "8534b44cf326ed45c455aad97dd4e52a879cd1ec2a154b64aa95a4614c5d8c68",
+      "summary": "How AI changes product development, engineering and agents."
+    },
+    "benjamin-mann.md@00:14:49": {
+      "theme": "ai",
+      "text_sha256": "2aeec75ebd5175b8859279a17570574c765670a32a77701a310c055cd6fba8ef",
+      "summary": "What AI is already doing to jobs that people may be missing."
+    },
+    "benjamin-mann.md@00:57:04": {
+      "theme": "ai",
+      "text_sha256": "0794b6476bbaff76f4dc2aac87302599ef60743f968071b3cbb9c8ada15de3d6",
+      "summary": "The biggest bottleneck to improving model intelligence."
+    },
+    "boris-cherny.md@00:05:35": {
+      "theme": "ai",
+      "text_sha256": "3c5ff2eba699182f95fd7315a31e77423224a34c300a440e5c7c762e16232d53",
+      "summary": "Claude Code’s impact around its first anniversary."
+    },
+    "bret-taylor.md@01:04:08": {
+      "theme": "ai",
+      "text_sha256": "bedc5883da393fc157da8f20c39011700c929d94ac3343439e01857d174ce701",
+      "summary": "How outcome-based AI pricing works, using Sierra as an example."
+    },
+    "chip-huyen.md@00:06:49": {
+      "theme": "ai",
+      "text_sha256": "d5ebc975bb09870aa4780daf838f4f4b9c1430e068930de840e3e1b81e6b0803",
+      "summary": "The difference between pre-training, post-training and fine-tuning AI models."
+    },
+    "claire-vo-openclaw.md@00:49:59": {
+      "theme": "ai",
+      "text_sha256": "e81e7e0b59814986de41bb7cc2422f5cc38390af6252e5b271fea981d610d0a4",
+      "summary": "Practical uses for Claire’s collection of OpenClaw agents."
+    },
+    "dan-shipper.md@00:25:41": {
+      "theme": "ai",
+      "text_sha256": "036b7ddf2c352468f1e56f4f829b926590e4b96a7372b6b137568aecc0c9131b",
+      "summary": "How an AI-first company organizes its team and work."
+    },
+    "dan-shipper.md@00:50:11": {
+      "theme": "ai",
+      "text_sha256": "ed10e44bfaa387931e03118fe17afe247b3d0ccedd4547596617e2cecce51b2a",
+      "summary": "Whether AI accelerates junior employees’ learning despite fewer entry-level roles."
+    },
+    "dhanji-r-prasanna.md@00:32:16": {
+      "theme": "ai",
+      "text_sha256": "0d61f684c0afbf93ae94597279bf08d9499c698bcc606552dd3ec9b720a753fa",
+      "summary": "How engineering and product work may change over the next few years."
+    },
+    "dianne-penn.md@00:23:33": {
+      "theme": "ai",
+      "text_sha256": "65ac51b5f737d494946449c06ec3eb7a2768a39f6971e623e046dd0cc6376796",
+      "summary": "How Anthropic Labs works and produces ideas outside the core roadmap."
+    },
+    "elizabeth-stone-2.md@00:28:34": {
+      "theme": "ai",
+      "text_sha256": "f603f342d83b337a301b738fec2aeebe0f8eddddd9dcf0e79b3210bf46f2a6e2",
+      "summary": "Whether Netflix changed career ladders and performance expectations for AI."
+    },
+    "elizabeth-stone-2.md@00:30:58": {
+      "theme": "ai",
+      "text_sha256": "22e58dd93eb688c07637e354711047770074a641f393746d013952953ef6f550",
+      "summary": "Valuable AI uses at Netflix beyond coding and prototyping."
+    },
+    "eric-simons.md@00:56:50": {
+      "theme": "ai",
+      "text_sha256": "6187d5a187183621007f363e8e7317586c39cb3c4d36a764fee1f55055e12acc",
+      "summary": "How changes in product management also apply to product-minded founders."
+    },
+    "fiona-fung.md@00:19:39": {
+      "theme": "ai",
+      "text_sha256": "9cad5c7fa807ccd0d29be89973bf1fad594ad60e0227da2572818476ac243053",
+      "summary": "What distinguishes engineers thriving with AI from those resisting it."
+    },
+    "garrett-lord.md@00:40:43": {
+      "theme": "ai",
+      "text_sha256": "087d3424d79a3f0c5d9e5b5cf5e9c8d43156046d4c77c09a67d9ac5791ff843b",
+      "summary": "Different sources and methods for producing AI training data."
+    },
+    "garrett-lord.md@00:45:48": {
+      "theme": "ai",
+      "text_sha256": "96d4d3c8916fc09628238fb946998d54da439516b0a6bd24222d8e50cf85ebd3",
+      "summary": "How Handshake first recognized and explored the AI data opportunity."
+    },
+    "gaurav-misra.md@01:02:03": {
+      "theme": "ai",
+      "text_sha256": "0d8bbc6563e2aad8cddea72a80b8ebe44de5384438985ea68133c0db2786615c",
+      "summary": "Where AI video is heading; explicitly leaves the preceding legal tangent aside."
+    },
+    "guillermo-rauch.md@00:19:07": {
+      "theme": "ai",
+      "text_sha256": "8aa2785dd99d4c7e2d547e5620371a0274f6a6f0baa6d4ea4030aac1779bf8f7",
+      "summary": "The future of engineering careers and whether people should learn to code."
+    },
+    "howie-liu.md@00:32:58": {
+      "theme": "ai",
+      "text_sha256": "d92c2be441183c0c9932698f79367664146746b4f03bdc81dfe744b2d892c5ed",
+      "summary": "Prompt-based app-building interfaces and what might come next."
+    },
+    "ian-silber.md@00:27:34": {
+      "theme": "ai",
+      "text_sha256": "1e30bbf5925fdc88e0a8e7f0ab056113a4f1d5db68f9674fdee5dbdc11102663",
+      "summary": "How AI changes the skills OpenAI looks for when hiring designers."
+    },
+    "ian-silber.md@00:32:54": {
+      "theme": "ai",
+      "text_sha256": "b722daeeff1ffa0adb884052fc2e2ae05de5c45e7dc95bbc0c12db08dffa1e5d",
+      "summary": "How design shifts from a sequential process to broader planning and direction."
+    },
+    "inbal-s.md@00:07:43": {
+      "theme": "ai",
+      "text_sha256": "a3bb346f4939f4d728938a00655bfc11442e4bdd80b10651e0099e5abedfa5ad",
+      "summary": "How Copilot and AI will change software development over three to five years."
+    },
+    "jason-droege.md@00:31:14": {
+      "theme": "ai",
+      "text_sha256": "876b8250c51e733289079c7d5cf4babb564c1a0b582db7a3493c617a66f97254",
+      "summary": "Optimism about human adaptability to AI, with a detour into Scale’s evaluation work."
+    },
+    "jason-droege.md@00:35:25": {
+      "theme": "ai",
+      "text_sha256": "d94422905c2babe56bcb428d0591413cced11b0ee3a6e7991ccd851a67da1b61",
+      "summary": "Where AI models may be heading in the next two to three years."
+    },
+    "jeanne-grosser.md@00:11:23": {
+      "theme": "ai",
+      "text_sha256": "725a1b9b079af1d1ef5faeb53b4bed08e9542d5f4a413f003ccd36e855400c3b",
+      "summary": "What go-to-market engineers do and how they change previous workflows."
+    },
+    "jeetu-patel.md@00:08:47": {
+      "theme": "ai",
+      "text_sha256": "57107a415c3855ee5857c811718062ad6031a42293b7a33e744faa7b0094a953",
+      "summary": "How Cisco is adapting from a traditional enterprise to an AI-focused company."
+    },
+    "jenny-wen.md@00:18:46": {
+      "theme": "ai",
+      "text_sha256": "bc4ecb0486d5b86a18b64d08ba4c8332dfed5ebb64cab47df1fa5d975385fa07",
+      "summary": "The AI tools Jenny uses as a designer and manager."
+    },
+    "karina-nguyen.md@00:11:19": {
+      "theme": "ai",
+      "text_sha256": "154ce202c5855cbc0dcead2b97a305f1dc20f03b0879bcaa27232eebdc52fec0",
+      "summary": "How synthetic data from existing AI models trains future models."
+    },
+    "karina-nguyen.md@00:12:52": {
+      "theme": "ai",
+      "text_sha256": "420af64251f3bbe9f9e1f4f2769767fb800811c0d26ea42ab9bfa35661524d1c",
+      "summary": "How the preceding AI research approach helped create ChatGPT Canvas."
+    },
+    "karina-nguyen.md@00:20:23": {
+      "theme": "ai",
+      "text_sha256": "8352569f6ef5db003405742d69dfff5fba2a53a6ea93996aef14f4156bf37dc6",
+      "summary": "What writing evaluations looks like in everyday product-team work."
+    },
+    "karina-nguyen.md@00:41:34": {
+      "theme": "ai",
+      "text_sha256": "11bb6a9e5b56272ada9a9dbaff49f81b24b31dc6c0478e288dec926c9f4b9cbb",
+      "summary": "Which skills product teams should build as AI improves, after discussing the move from engineering to research."
+    },
+    "kevin-weil.md@00:18:45": {
+      "theme": "ai",
+      "text_sha256": "d16f5fa4c457032ce6f70a47d724299d41049fc4b01d8a1df8839ad2ad2c2bb1",
+      "summary": "How AI evaluations fit into product development."
+    },
+    "kevin-weil.md@00:24:40": {
+      "theme": "ai",
+      "text_sha256": "1e899208f83d94aa8a29b32e72c9693c2c8b8424fc235cea3db27df389b09dcf",
+      "summary": "Where startups can build without being overtaken by foundation-model companies."
+    },
+    "lazar-jovanovic.md@00:10:10": {
+      "theme": "ai",
+      "text_sha256": "d2e5bd9bca7fc476180553dbe40b94297dcb56270581397709184d81764ef96c",
+      "summary": "Whether a nontechnical background can be an advantage in AI building."
+    },
+    "marc-andreessen.md@00:11:15": {
+      "theme": "ai",
+      "text_sha256": "caf4fea969478bafc433396f2833d931be886e41917ec3da0a552518eb6a5fe7",
+      "summary": "The skills and careers Marc encourages his child to pursue."
+    },
+    "matt-macinnis.md@01:17:48": {
+      "theme": "ai",
+      "text_sha256": "ba90e75cbd726032a5daf533da96a03100d49d99acca53026905c571e2a9b0e0",
+      "summary": "Whether AI will replace SaaS."
+    },
+    "mike-krieger.md@00:24:03": {
+      "theme": "ai",
+      "text_sha256": "bfaa1a9b87b4de772d273bbc8b469412e4fe7023fb9f51f9a82997d89619c8df",
+      "summary": "Where product teams will add value as AI becomes able to build more itself."
+    },
+    "molly-graham-2.md@01:13:29": {
+      "theme": "ai",
+      "text_sha256": "1b114fc6a66bf898dc22b798a5fa8376ffa83ac9e16b38ba992022ef49931da4",
+      "summary": "Why newcomers to AI tools are not necessarily behind experienced users."
+    },
+    "nikhyl-singhal-2.md@00:40:50": {
+      "theme": "ai",
+      "text_sha256": "79deabf304a97eadd33f5d794ba061b416eda73f6e1930a04555881e4ac05d0c",
+      "summary": "Practical career advice for PMs adapting to AI."
+    },
+    "nikhyl-singhal-2.md@00:58:51": {
+      "theme": "ai",
+      "text_sha256": "7d6c9342e7130626582edc03a4a6c2590fadba151c2173c2f1bdf511f097d751",
+      "summary": "Nikhyl’s AI stack and what he has built with it."
+    },
+    "noam-segal.md@00:10:57": {
+      "theme": "ai",
+      "text_sha256": "d313d0920db860a2625c27cc970fde9f4444947c557b083eeda996e9420d0c7d",
+      "summary": "How feelings about AI correlate with broader measures of wellbeing at work."
+    },
+    "paige-costello.md@00:40:05": {
+      "theme": "ai",
+      "text_sha256": "c2708e0b6b38456aebd2747425fefef343f92c84167c5aa7822deffd50d2d699",
+      "summary": "How Asana allocates AI exploration between specialist teams and product teams."
+    },
+    "peter-deng.md@00:11:35": {
+      "theme": "ai",
+      "text_sha256": "8aa4fdd0f56bba78c5776f8763a8880d046296620abf352e0aa2305aee140415",
+      "summary": "An underappreciated way AI could change things substantially."
+    },
+    "roman-ugarte.md@01:06:35": {
+      "theme": "ai",
+      "text_sha256": "9147834feab2c60cf1d98305e10c5fddcb2d34e3df3ab4eb2e39a090e711eb0e",
+      "summary": "How Cursor kept adapting and succeeding against the AI labs it depends on."
+    },
+    "sam-schillace.md@00:42:46": {
+      "theme": "ai",
+      "text_sha256": "31c73004281a72f33668e76568d5f86d016b2586c81b06cab075a77ac9b84a2a",
+      "summary": "How AI could change documents and software, with a detour into Google Docs’ origins."
+    },
+    "scott-wu.md@01:09:15": {
+      "theme": "ai",
+      "text_sha256": "c17bdc6f71100b995ca138920835f8500ccdd7cf0742056ba8e294c274b90a60",
+      "summary": "The most helpful advice for new Devin users."
+    },
+    "sherwin-wu-v2.md@00:12:27": {
+      "theme": "ai",
+      "text_sha256": "3c994a1e652c4cf76aa1056509e848e38ca31a3c960724152520e62792c4a815",
+      "summary": "The pressure engineers feel to keep AI agents continuously working."
+    },
+    "sherwin-wu-v2.md@00:50:16": {
+      "theme": "ai",
+      "text_sha256": "424af20a7e65495f4d3e4d1c83ac1be015ef34e74e4bd59e167a14b5abd59267",
+      "summary": "The next 6–12 months for OpenAI’s API, platform and models."
+    },
+    "simon-willison.md@00:13:57": {
+      "theme": "ai",
+      "text_sha256": "d4e7ec1f18e19051d9d2eebf261789f0cc903491a2e78c497460f0a13b1ea594",
+      "summary": "How an AI software factory changes the process of building software."
+    },
+    "simon-willison.md@00:20:41": {
+      "theme": "ai",
+      "text_sha256": "8387c71726d58e53c5a79ec8670b9553cbe483aed2586584f6eb67118f7ba26d",
+      "summary": "Whether AI can move beyond implementation into deciding what to build."
+    },
+    "tom-verrilli.md@00:35:22": {
+      "theme": "ai",
+      "text_sha256": "ac653a3510fb92493f5bf6b487afb3efed68b6c5724f1ca7fa967e3d41eba8ff",
+      "summary": "AI productivity gains beyond prototyping."
+    },
+    "varun-mohan.md@00:38:38": {
+      "theme": "ai",
+      "text_sha256": "0242ed539e8f395bd4a7273c91243878134865fb07d4892892267399bc1ff0fe",
+      "summary": "Why understanding an existing large codebase is a differentiator for Windsurf."
+    },
+    "adam-ward.md@00:16:01": {
+      "theme": "teams",
+      "text_sha256": "23cd1c418b016ea2814115dcf7267ac9cbfeae6d8efc95c33b2abad1e9d506f7",
+      "summary": "Treating every hire like an executive search to find the top 1% of talent."
+    },
+    "bill-carr.md@01:09:55": {
+      "theme": "teams",
+      "text_sha256": "8db21d0e06b8fcac5e24190b5b1d0e3de3a8f8af06bf8f3478d9efc1774dac1a",
+      "summary": "Making tolerance for failure real in performance reviews and resource decisions."
+    },
+    "boz.md@00:56:31": {
+      "theme": "teams",
+      "text_sha256": "732d18212dec3b9684b795a868882a83e12badd0d517429a0ea45849ecb8a950",
+      "summary": "Adapting communication to the person receiving it."
+    },
+    "camille-fournier.md@00:28:35": {
+      "theme": "teams",
+      "text_sha256": "406b6dca628bfbedd5c7bb72749830196a7a22a8007055b6d1e51a8a39634c2a",
+      "summary": "Engineering languages, platforms or frameworks that help or hinder teams."
+    },
+    "camille-fournier.md@00:45:26": {
+      "theme": "teams",
+      "text_sha256": "602d0b8196e19055c39c0d8489bdb049cae64e53d45341189f4956b6ea066d3d",
+      "summary": "Building a hard-working culture with sustainable work-life balance."
+    },
+    "carole-robin.md@00:10:41": {
+      "theme": "teams",
+      "text_sha256": "7016c3352d1aa272415a608f5d5c34f7845bdcc8f345c9ab180562d6f70f5142",
+      "summary": "What Stanford’s Interpersonal Dynamics class aims to teach and how it works."
+    },
+    "chip-conley.md@00:11:45": {
+      "theme": "teams",
+      "text_sha256": "ddfca8c8dbb3d074ef4fcc4366eb6fc6555f3fb3b2a50d8c1477540fbc07fc29",
+      "summary": "Working for Brian Chesky and the realities of founder mode."
+    },
+    "daniel-lereya.md@00:10:40": {
+      "theme": "teams",
+      "text_sha256": "47dc11ba5d0109e3b1d86b9002e7d610db1226501bd9395ceb45c6b8589bcfaf",
+      "summary": "How seeing others achieve the seemingly impossible changes a team’s ambition."
+    },
+    "elizabeth-stone.md@00:08:32": {
+      "theme": "teams",
+      "text_sha256": "848a17fff01fa119666413817b425fffe9b78870ae4c352996155d0ac6233bc8",
+      "summary": "How an economics background helps with incentives, leadership and unintended consequences."
+    },
+    "eoghan-mccabe.md@00:58:01": {
+      "theme": "teams",
+      "text_sha256": "80da5c353830296fdd085f00239239bc448a21120682ada1e2f1769024a96370",
+      "summary": "The personal transformation behind Eoghan’s more reflective leadership."
+    },
+    "evan-lapointe.md@01:50:35": {
+      "theme": "teams",
+      "text_sha256": "9fe009ec61147a7f87d844f0a11d045b67c46086b53861b7ca4e7fd0499cdfc4",
+      "summary": "Improving personal focus and protecting a team’s time to concentrate."
+    },
+    "hilary-gridley.md@00:38:10": {
+      "theme": "teams",
+      "text_sha256": "0b25c1d13a97dc3f65c0e3578fe598abee1bfc5a358a0c31f58df9344b86ff63",
+      "summary": "Leading a team through a decision you personally disagree with."
+    },
+    "jackson-shuttleworth.md@01:09:17": {
+      "theme": "teams",
+      "text_sha256": "5f049a6b84c8f1e6f2e72395bedcba8cc8a5af05501fb013880902258c302eca",
+      "summary": "The processes and cross-functional dependencies behind high-volume experimentation."
+    },
+    "jag-duggal.md@00:11:23": {
+      "theme": "teams",
+      "text_sha256": "8673767c71ef1236e1c05773f15f9296a5b9eeaa646b912128e63045ea52ec0d",
+      "summary": "Nubank’s five company values."
+    },
+    "janna-bastow.md@00:32:57": {
+      "theme": "teams",
+      "text_sha256": "b5c0d00c5045dfb6b3becbb4de292e7e443b4ebccad9bfa6c5f2cb37c3a4c240",
+      "summary": "How many product teams are truly high-performing."
+    },
+    "jason-fried.md@00:13:39": {
+      "theme": "teams",
+      "text_sha256": "5a0dea405fffdd9e209f331d8abc692fda668adce2aaad24b4da2ad8398ed8ef",
+      "summary": "The benefits and operating philosophy of small teams."
+    },
+    "jason-m-lemkin.md@00:18:57": {
+      "theme": "teams",
+      "text_sha256": "b8147951a78a15f14501780786402111c9d67fe45eaed4d2621e6498506b271c",
+      "summary": "The right seniority for a startup’s first two sales hires."
+    },
+    "jeffrey-pfeffer.md@01:15:41": {
+      "theme": "teams",
+      "text_sha256": "32040442e3567a1b9ee0d0ab6fedc5e920927242842bfe754ef0e65ed8962711",
+      "summary": "Whether teaching power also means questioning the desire to reach the top."
+    },
+    "jess-lachs.md@00:15:11": {
+      "theme": "teams",
+      "text_sha256": "a6b48be8bf828adfd10d6c9093a1bfc4b3a2e6affc9763ccacf6db2f4524a373",
+      "summary": "Balancing proactive data exploration with routine requests from other teams."
+    },
+    "jessica-fain.md@00:31:25": {
+      "theme": "teams",
+      "text_sha256": "75ce3a7f389904f899e4d2c37a0d1fc3dbf4710a2230796699ce428f41416f63",
+      "summary": "Understanding executives’ priorities before returning to aligning incentives."
+    },
+    "john-cutler.md@00:40:08": {
+      "theme": "teams",
+      "text_sha256": "7b4adafbda6164e18c10a42640abd713f518c45b2890f873c0f9b7e45ccfd160",
+      "summary": "Culture and values behind high-performing product teams."
+    },
+    "karri-saarinen.md@00:16:42": {
+      "theme": "teams",
+      "text_sha256": "20cc14d72c83fc045954d72dfe0c72136fa2dede9c5c2efd1832f2540a401e05",
+      "summary": "How Linear operates with one product manager."
+    },
+    "keith-coleman--jay-baxter.md@00:40:03": {
+      "theme": "teams",
+      "text_sha256": "72456fdc9a62a4cbf04738de08b2317e9b0cba8d9474579b5667f9ee7cf7c665",
+      "summary": "How the Community Notes team was protected and organized to operate effectively."
+    },
+    "keith-coleman--jay-baxter.md@00:47:34": {
+      "theme": "teams",
+      "text_sha256": "24899f08e559f28e637021ae7bf72f9aeec8b95ac0c5f774f4a846ad370fe8ab",
+      "summary": "The team’s “Thermal” culture and the story behind its rallying cry."
+    },
+    "kenneth-berger.md@00:59:10": {
+      "theme": "teams",
+      "text_sha256": "7d42be180871aad1ea995a84bb60dee3432eedae0b849079478da21162aedb5c",
+      "summary": "Assessing whether a founder and an early product manager will work well together."
+    },
+    "kim-scott.md@00:14:07": {
+      "theme": "teams",
+      "text_sha256": "1127df2bb219e86e5465b237069d829c6d5ac3a90d9e7d5178cc91b0eed97e72",
+      "summary": "Giving direct feedback while making care clear and avoiding defensiveness."
+    },
+    "kim-scott.md@00:27:50": {
+      "theme": "teams",
+      "text_sha256": "8c38dba2f35ce4577484bb3097cde4b9734f17140d21bc8f1b65109952f261da",
+      "summary": "Overcoming people-pleasing to become a more candid leader."
+    },
+    "lauren-ipsen.md@00:29:01": {
+      "theme": "teams",
+      "text_sha256": "8fec6c1f2b35820dcf0ce7503ee0c1db6441357e563a57c1ead96488d80cd504",
+      "summary": "Making limited hiring time productive rather than simply spending more hours."
+    },
+    "melissa-tan.md@00:34:37": {
+      "theme": "teams",
+      "text_sha256": "89a05c30b28cfeb7f0ad92a133cb37344457a0f85c7b4c8c39a849a413459618",
+      "summary": "Creating a team-first culture when individual impact drives performance reviews."
+    },
+    "naomi-gleit.md@01:00:34": {
+      "theme": "teams",
+      "text_sha256": "bccba0eac74fcb54d28c8032a1ccd0a7bcce1326f841674c3dc4cc2e784adb3a",
+      "summary": "A difficult project that illustrates simplifying complexity and getting work finished."
+    },
+    "naomi-gleit.md@01:22:27": {
+      "theme": "teams",
+      "text_sha256": "4112218bd5537c81413a50025f49cd491e06568c56c5aeee91ffa62a6f4b2c86",
+      "summary": "Developing and communicating an independent, first-party point of view."
+    },
+    "nickey-skarstad.md@00:37:57": {
+      "theme": "teams",
+      "text_sha256": "2ac7e86fc1252af876710316836717fd58e0497f1bd3a19641d594b1bbeaa831",
+      "summary": "How PMs help teams reach final decisions and establish decision authority."
+    },
+    "nir-eyal.md@01:00:09": {
+      "theme": "teams",
+      "text_sha256": "9b25a91315825c3856202e931cc42cb4877153c240bcb84e00f6c8b10069e47e",
+      "summary": "Building a workplace that helps employees focus and avoid distraction."
+    },
+    "peter-deng.md@00:41:56": {
+      "theme": "teams",
+      "text_sha256": "50c2ad2c173b8a16518ec9f999135cc27a18501b69f8d7518b88d494ca212a67",
+      "summary": "When to invest in systems and plan ahead as a product scales."
+    },
+    "raaz-herzberg.md@00:34:01": {
+      "theme": "teams",
+      "text_sha256": "56a6ad4865db16e2e53cd4c00bc0cd2580f7ac377d9fafbea6817aaa06f575b3",
+      "summary": "Why CMOs fail and what fresh perspectives can bring to marketing."
+    },
+    "ray-cao.md@00:15:11": {
+      "theme": "teams",
+      "text_sha256": "a5acc37b35d0c5d04aece408aa0f6f35d2b2a9d238faadc78c7d79bd6ea48153",
+      "summary": "TikTok’s product process and creator/business success, starting with its culture."
+    },
+    "tom-conrad.md@00:12:43": {
+      "theme": "teams",
+      "text_sha256": "a223a1e1bf7ce1648ae8e9522b35aab35d114ad708afdc546c7fffa8755b2b5c",
+      "summary": "Assessing the people and team culture before joining a company."
+    },
+    "tom-verrilli.md@00:15:19": {
+      "theme": "teams",
+      "text_sha256": "57b9672627abb7b2300720a9fec5b6ef319013721bd4df2c542dd96579553315",
+      "summary": "The structure of Whatnot’s product, engineering and design teams."
+    },
+    "tom-verrilli.md@00:17:28": {
+      "theme": "teams",
+      "text_sha256": "724aac8572474c7aebe0ecb707ef4b7e8dba1165a687b22782a38336c1329c21",
+      "summary": "What Whatnot looks for when hiring exceptionally selective PM roles."
+    },
+    "varun-parmar.md@00:07:20": {
+      "theme": "teams",
+      "text_sha256": "68e5f48f8970adfc45200b770f1a94f7380074300b8a03f49cc676a7a683cb98",
+      "summary": "Building empathy and teamwork across locations and cultures."
+    },
+    "albert-cheng.md@00:28:03": {
+      "theme": "growth",
+      "text_sha256": "8d97bad15a24780aa5860086c09f4625690fa63f2694dc1a147cb86a1b856ebe",
+      "summary": "Why distribution and acquisition make consumer subscription products harder than they look."
+    },
+    "albert-cheng.md@00:55:15": {
+      "theme": "growth",
+      "text_sha256": "f7fb8a54eed9c44a6d155866c83f62d9d2e774f605ac4b5ef9055c2daffc92bf",
+      "summary": "Practical ways to improve experimentation and run more useful tests."
+    },
+    "archie-abrams.md@00:27:16": {
+      "theme": "growth",
+      "text_sha256": "a802aa9ae2b6c2c48dc8e4fddaebbc9cc36b5455bb8fadd199257a9d1601a2fd",
+      "summary": "Why Shopify emphasizes absolute numbers over percentages and ratios."
+    },
+    "camille-ricketts.md@00:33:19": {
+      "theme": "growth",
+      "text_sha256": "2394ad3577c73bb16359af31a55e2a277eb0615876b57613cdc6ccd5a6efed22",
+      "summary": "When investing in a product community does not make sense."
+    },
+    "cat-wu.md@00:28:32": {
+      "theme": "growth",
+      "text_sha256": "652095d9bf69c1affec1cc796997022793cf923e9360529908c4c6c011feed33",
+      "summary": "What enabled Anthropic’s growth and competitive success."
+    },
+    "claire-butler.md@01:03:24": {
+      "theme": "growth",
+      "text_sha256": "d38ec233d8ab199050ec2c2a988cb46f9cef1892dd0fa2918d186238c64a294c",
+      "summary": "Removing a product limit that was constraining Figma’s organic growth."
+    },
+    "crystal-w.md@00:17:21": {
+      "theme": "growth",
+      "text_sha256": "526a54a0a476db8332343c35898fa1e8a66b5c8be0b8d013ab4e5b351da43d55",
+      "summary": "Running experiments at early-stage startups with limited users and data."
+    },
+    "elena-verna-40.md@00:18:57": {
+      "theme": "growth",
+      "text_sha256": "b1dc2c47b7dc67486b59e523dadff279204e621dc2a418235a8682df0a3c0de3",
+      "summary": "Which growth tactics are no longer worthwhile and which still work."
+    },
+    "eli-schwartz.md@00:39:16": {
+      "theme": "growth",
+      "text_sha256": "f24ce0f271203cb1080a57766a9e115e8f935d83ce7df5f6f6b0a63b3817c463",
+      "summary": "Deciding whether SEO is an opportunity and how much to invest in exploring it."
+    },
+    "emilie-gerber.md@00:08:18": {
+      "theme": "growth",
+      "text_sha256": "13181af4d1b528cc22dd9990b5418820c89018b0264c9f11ebd81510b711107c",
+      "summary": "How useful or surprising product experiences generate attention for Perplexity."
+    },
+    "gina-gotthilf.md@00:28:59": {
+      "theme": "growth",
+      "text_sha256": "ffb13900d0d9265738e22e6e1857dbb9695e06047421150b2059178a71991908",
+      "summary": "Why successful consumer subscription businesses stay lean and scrappy."
+    },
+    "grant-lee.md@00:29:21": {
+      "theme": "growth",
+      "text_sha256": "0ef31294bbf247352ead2bd1350115402b08b132a8d9771a05b8d8a0c384ae1a",
+      "summary": "How founders make time for marketing and share useful lessons publicly."
+    },
+    "hila-qu.md@00:09:42": {
+      "theme": "growth",
+      "text_sha256": "d2cec88b1f89ff3d00e1bfd54bcb143bae76f993dacece431a6c7b5ba1c68904",
+      "summary": "What makes a product genuinely product-led rather than sales-led."
+    },
+    "jonathan-becker.md@00:07:26": {
+      "theme": "growth",
+      "text_sha256": "100b800c8cae67a467e14df82e6ee6e5ed2663f31b3b9fd2cb4ce2be70e053ed",
+      "summary": "How Jonathan landed Uber as a customer."
+    },
+    "jonathan-becker.md@00:19:06": {
+      "theme": "growth",
+      "text_sha256": "cb82e6bfb2e7b7df4f2e05cadf43b943f8a4c130f0efee776355bab8640a13bf",
+      "summary": "Which business models and payback periods make paid acquisition viable."
+    },
+    "krithika-shankarraman.md@00:11:17": {
+      "theme": "growth",
+      "text_sha256": "13daffa89d56c790ca420f428332804b115d4544b09446e56890cea14888a1ed",
+      "summary": "Finding a marketing approach without copying another company’s playbook."
+    },
+    "luc-levesque.md@00:19:08": {
+      "theme": "growth",
+      "text_sha256": "5a1e1472cc16c96c6058e2a5c69abcd1bb88de87dca0dbe4f39213ba630a5971",
+      "summary": "Why growth work should wait until product-market fit."
+    },
+    "rahul-vohra.md@00:07:02": {
+      "theme": "growth",
+      "text_sha256": "bbb0fec6b56f7e39b1847d0b79d14882047244686cfdb4121ef9b74f33f45372",
+      "summary": "The secret to product virality."
+    },
+    "ronny-kohavi.md@00:13:17": {
+      "theme": "growth",
+      "text_sha256": "220555dc21307e972ed8d586a2aec563222606eb6f4d70c2edff295ff792685f",
+      "summary": "What proportion of experiments teams should expect to fail."
+    },
+    "sarah-tavel.md@00:26:05": {
+      "theme": "growth",
+      "text_sha256": "b758643770c6c132d96a9ce97593e06b31f5def23cbc324be7dcb249d2f927d4",
+      "summary": "Increasing retention by making a product valuable to stay with."
+    },
+    "sean-ellis.md@00:12:35": {
+      "theme": "growth",
+      "text_sha256": "759a2ff70740fbc8f7a434da7c92f4357dfd8826f4b4fdc52536106c1dd237e9",
+      "summary": "Using product-market-fit survey responses to focus growth and product decisions."
+    },
+    "tim-holley.md@00:28:43": {
+      "theme": "growth",
+      "text_sha256": "4be35b6e5f2187d4d3689973b6e949d18e64b11d2ed942532e3608258ee6812f",
+      "summary": "Experiments that improved conversion on Etsy’s buyer side."
+    },
+    "timothy-davis.md@00:12:22": {
+      "theme": "growth",
+      "text_sha256": "8d3ba9afe79416ccb6e72a4d943537f97d1797d6a8b024fcdef02f57545fe302",
+      "summary": "How to run useful tests for signs of life in new advertising channels."
+    },
+    "uri-levine.md@00:21:56": {
+      "theme": "growth",
+      "text_sha256": "bfd13676fa491d8ad72d3e1f6d386574b178dd380dc25e4c2ce43880c84c9def",
+      "summary": "When Waze first felt product-market fit."
+    },
+    "zoelle-egner.md@00:36:41": {
+      "theme": "growth",
+      "text_sha256": "6aefe41e2c7d880c2fb7a184622fd1a5123b6c0ce285bb97f1364ea1e9c086d3",
+      "summary": "The marketing and growth tactics that most helped Airtable."
+    },
+    "alex-komoroske.md@00:17:01": {
+      "theme": "craft",
+      "text_sha256": "974de96efaff03dfd5cddfaac90715a32e4422b42b4629b201d53720291a4298",
+      "summary": "What taste means and how to develop it."
+    },
+    "alex-komoroske.md@00:31:48": {
+      "theme": "craft",
+      "text_sha256": "273d91917caea06827860becfa0b829a2feaf9c59bc721ab7f666ad4bf9b7611",
+      "summary": "Building versus gardening: nurturing ideas that can grow on their own."
+    },
+    "annie-duke.md@00:24:54": {
+      "theme": "craft",
+      "text_sha256": "6d9eede0a20a19fe99a10b797090154a55a433837abac9df5e0d7ce08fc5cc39",
+      "summary": "Decision-making frameworks that have the greatest practical impact."
+    },
+    "bob-baxley.md@00:38:06": {
+      "theme": "craft",
+      "text_sha256": "a32b31667c72d7267e534c6b4e3abaddafaff7ed1beb24a5333eb1376e036eff",
+      "summary": "The difference between design tenets and design principles."
+    },
+    "bob-moesta.md@00:18:30": {
+      "theme": "craft",
+      "text_sha256": "1117e953e0be9d98fdc7604887816dd07151fc83bd4b9335eca6e29e50e11b3a",
+      "summary": "How to interview customers to uncover their jobs to be done."
+    },
+    "ivan-zhao.md@00:47:43": {
+      "theme": "craft",
+      "text_sha256": "b0e7c749fe3833129ce03417047a0837d09f32e1492a81b86e8cd4b78f2040a7",
+      "summary": "What helped Notion return to first principles."
+    },
+    "jag-duggal.md@01:00:46": {
+      "theme": "craft",
+      "text_sha256": "33c3d7c5b975d75eae4fb6e44b0b90b915149b6475c961fbaa643568a2cb5c70",
+      "summary": "How Nubank chooses and sequences new products and business units."
+    },
+    "katie-dill.md@00:18:46": {
+      "theme": "craft",
+      "text_sha256": "ed98c5358f78fc793c9c3af286edec794c50e6d2e2ed163e71fa1753e7246a18",
+      "summary": "How a designer’s quality lens differs from optimizing checkout metrics."
+    },
+    "kayvon-beykpour.md@01:07:25": {
+      "theme": "craft",
+      "text_sha256": "a62327cbdb520430b22aabf694bdce464c0243c25c2cab9fb9299c72436cfdb7",
+      "summary": "Why Twitter failed to capitalize on video through Vine and Periscope."
+    },
+    "peter-deng.md@00:36:46": {
+      "theme": "craft",
+      "text_sha256": "de2bfb4dd1fb9c354e8fdbec6a386b926b3bab711c67eacd607081755b884839",
+      "summary": "Lessons from taking products from zero to one and then to massive scale."
+    },
+    "rob-snyder.md@00:33:56": {
+      "theme": "craft",
+      "text_sha256": "7705b5a089690889d9c2e1c6e4fe9eda15d695ef36194ff548c3cb567b7fa5d5",
+      "summary": "Where the initial ideas came from for companies Rob advised."
+    },
+    "ryan-singer.md@01:14:30": {
+      "theme": "craft",
+      "text_sha256": "bebcb16e259ec3913e1d6115fc3e0d48e292a9e0419cd6f94aefa8c0eb660326",
+      "summary": "Recognizing when a team should try a different product-development approach."
+    },
+    "sam-schillace.md@00:19:47": {
+      "theme": "craft",
+      "text_sha256": "4918200671c260c4b518c20d602cc4976fbe91b5fb755d9c79f86ef037b41d51",
+      "summary": "Learning through trying things and the experimental origins of Google Docs."
+    },
+    "sam-schillace.md@00:49:22": {
+      "theme": "craft",
+      "text_sha256": "76953f53d6b323ea7a7fd172abc8557d5f92ed8691fd0256be52d2f7a8994a6e",
+      "summary": "Getting better at imagining future possibilities and asking “what if.”"
+    },
+    "shaun-clowes.md@00:13:24": {
+      "theme": "craft",
+      "text_sha256": "2619bb6d80618fdb61fcf89f316ab713e005e77b0270113a4c73302f43ee5fff",
+      "summary": "Tools for synthesizing user research and survey feedback."
+    },
+    "tony-fadell.md@00:21:24": {
+      "theme": "craft",
+      "text_sha256": "ebe664ec744f3f58195b767af03f48eeaa14651593a1832b8c70df66093e61fd",
+      "summary": "How to decide what to build and generate product ideas."
+    },
+    "andy-johns.md@00:47:48": {
+      "theme": "career",
+      "text_sha256": "05d94392c0fde9b5cda5ac379e1b87d6a734fe1c609aab4fb415af3f3c276d6d",
+      "summary": "Recognizing when work stress signals a need for deeper personal change."
+    },
+    "anneka-gupta.md@01:01:56": {
+      "theme": "career",
+      "text_sha256": "4ff0d912a0f63e2242a227cd1d0b882b1a0fbe0f653c8203726c51fd50a98ccf",
+      "summary": "Developing a mindset of gratitude, curiosity and enjoyment in difficult situations."
+    },
+    "chip-conley.md@01:00:32": {
+      "theme": "career",
+      "text_sha256": "bc7648706dda7d74a5f10558ef1addb5074013a73bc4c541f727138541d6dc1f",
+      "summary": "How a positive view of aging can affect longevity."
+    },
+    "deb-liu.md@01:00:06": {
+      "theme": "career",
+      "text_sha256": "dc38f98cae7ae1b2e289fc7856cc3a257d5f01af0c9870c7f52ca4cba771401e",
+      "summary": "Building resilience and learning to embrace failure."
+    },
+    "edwin-chen.md@01:06:25": {
+      "theme": "career",
+      "text_sha256": "1c94df4efc25ace2dafed99b0dd2f632a88c25385d26da52191795a3e29fcff2",
+      "summary": "How to acquire unusual experiences that help you create important work."
+    },
+    "gokul-rajaram.md@00:07:22": {
+      "theme": "career",
+      "text_sha256": "222a7b04b5b6a559244c19e38864eee178b6e1d8f22bcd5d53e35036833fa0d5",
+      "summary": "Choosing career opportunities based on excitement and passion."
+    },
+    "jackie-bavaro.md@00:09:51": {
+      "theme": "career",
+      "text_sha256": "1de77144cbbcb8f814e594abb715eea9c8a30a0a3bbcc9459ecfdd9a15f21de6",
+      "summary": "When Jackie discovered a mistaken career assumption and changed course."
+    },
+    "jules-walter.md@00:14:52": {
+      "theme": "career",
+      "text_sha256": "269ab94eb6e6c14bb4ff22cd8b81346f566a3106ca4cc677bcc1fb74af96d936",
+      "summary": "Building interview skills to get into companies with strong peers."
+    },
+    "jules-walter.md@00:51:06": {
+      "theme": "career",
+      "text_sha256": "91da50c772cf0333064a5f2e928420aab0644fe0c0c10c17da5b5b51abe7c852",
+      "summary": "Identifying and developing personal strengths."
+    },
+    "matt-lemay.md@00:23:37": {
+      "theme": "career",
+      "text_sha256": "613cdb0c2dfb0611e620dc9e93ac06159b271447e88f93e23222dcf7f337a5db",
+      "summary": "The low-impact product-manager death spiral."
+    },
+    "mayur-kamat.md@00:18:19": {
+      "theme": "career",
+      "text_sha256": "f8c135e1ebff1b51d258a4ab46e4909b83cda66b19fcaea2fde455825ab82820",
+      "summary": "Career advice that helps product managers advance and get unstuck."
+    },
+    "molly-graham.md@00:10:45": {
+      "theme": "career",
+      "text_sha256": "04283f8b832d64e664b56ff420a104b6bfd9fd8ea8b96384be46828c6c72d11c",
+      "summary": "Following up on Ami Vora and choosing roles beyond one’s current capabilities."
+    },
+    "nikhyl-singhal.md@00:29:46": {
+      "theme": "career",
+      "text_sha256": "5b4f10412277cd61a5887545ca03bb5b5bffae0b8515e3e9c5c5ed4a0dec6e8c",
+      "summary": "Distinguishing lack of recognition from a genuine performance gap."
+    },
+    "robby-stein.md@01:11:20": {
+      "theme": "career",
+      "text_sha256": "c759b8406d458f0e9c4564049efa9d58207b004db1e3fb22fec8c6de1b73b97e",
+      "summary": "Practical ways to cultivate curiosity."
+    },
+    "sam-lessin.md@00:07:02": {
+      "theme": "career",
+      "text_sha256": "a0fb906f0c0dd34f8410f27fe7345f76388fa8a2ceb154bb80210417e50562b3",
+      "summary": "Etiquette as a way to enter a room calmly and confidently."
+    },
+    "tobi-lutke.md@00:13:19": {
+      "theme": "career",
+      "text_sha256": "1126a1ebb8bc8a78b67e15e380aab6fc4fadcf8cd68e33c814a39b830c0da37d",
+      "summary": "Questioning school models and how people learn."
+    },
+    "vikrama-dhiman.md@00:33:39": {
+      "theme": "career",
+      "text_sha256": "2f7e76319a77e4d80d7985f8e036c9ac5b4a7e074e706b299ac6f43bccaeacca",
+      "summary": "How a limiting self-image affected Vikrama’s own career."
+    },
+    "vikrama-dhiman.md@00:41:59": {
+      "theme": "career",
+      "text_sha256": "d749e8636756e6f128c826042ac3922bc4cea27551b5779fd993e97fc3f05917",
+      "summary": "Choosing the skills someone needs to move from customer service into product."
+    },
+    "will-larson.md@00:26:48": {
+      "theme": "career",
+      "text_sha256": "08b2ab1cae6084944962c4f6b2990a3fdd83025b08520d38311ffe8d46ed5629",
+      "summary": "Making time to write and how writing affects an engineering career."
+    },
+    "andrew-wilkinson.md@00:07:19": {
+      "theme": "founders",
+      "text_sha256": "40b3ddedc030f43fbfa3a51b4fa7573fc1f35a27afced531359add9e96412bc5",
+      "summary": "Why small niche markets can be promising places to start a business."
+    },
+    "anish-acharya-2.md@01:04:29": {
+      "theme": "founders",
+      "text_sha256": "86cfc5c35550c2299eb03bed8e1ebb90f89b90b72a7c0f4dd693dde7b923b516",
+      "summary": "Counterintuitive lessons from successful startups in an investor’s portfolio."
+    },
+    "camille-hearst.md@00:14:26": {
+      "theme": "founders",
+      "text_sha256": "baaea3a1bc9b3272d422c5a579af3071f20b5a18c01808054714d0a285d31a41",
+      "summary": "What happened to the creator-economy boom and the promise of freelance work."
+    },
+    "christopher-lochhead.md@00:23:07": {
+      "theme": "founders",
+      "text_sha256": "83a98a5c4be607babc284ad411026b9da0364cfacb7be2d03b6192e6f98a9138",
+      "summary": "Concrete examples of companies and the categories they created."
+    },
+    "christopher-lochhead.md@00:28:58": {
+      "theme": "founders",
+      "text_sha256": "f982997d98bdb73de47f2da1b43550cbcc6d7e0dc8442a24eaaa7b8418f8f109",
+      "summary": "Why competing to be better within an existing category can be a trap."
+    },
+    "dalton-caldwell.md@00:07:04": {
+      "theme": "founders",
+      "text_sha256": "5c0c6803187fe7494f0e53f3954a51ce2359cc30288666febbd024cbc181eeed",
+      "summary": "Advice for founders on keeping a startup alive."
+    },
+    "dalton-caldwell.md@00:11:30": {
+      "theme": "founders",
+      "text_sha256": "17bf92b69da23bdb7822bf8c6d485cdd9a0d62cc2f888b6df08579607c9e9fcd",
+      "summary": "Normalizing startup struggles through Dalton’s story about Brex."
+    },
+    "gustaf-alstromer.md@00:34:13": {
+      "theme": "founders",
+      "text_sha256": "8df9bc102f0ba0d0749cb98a1acf9b7015f4ab7d581a29256ffa656c8e61c29e",
+      "summary": "What founders can do when they lack a technical cofounder."
+    },
+    "jason-fried.md@00:06:47": {
+      "theme": "founders",
+      "text_sha256": "fa288e5c6b567869a2a22adf90d1de52f49dde31a7e28eb62907eedeea69ffc9",
+      "summary": "When founders should raise venture capital versus bootstrap."
+    },
+    "mike-maples-jr.md@00:32:19": {
+      "theme": "founders",
+      "text_sha256": "640098c726febf0d3be80c7b62197b0e1c39f47db2b7f14bd6aef1228a3647e0",
+      "summary": "Why investors backed Airbnb’s founders despite disliking the initial idea."
+    },
+    "scott-belsky.md@00:16:34": {
+      "theme": "founders",
+      "text_sha256": "f2a7e508771ad734e2d4be6765a55f4a9d54f719e9a750c2edb60af6793cc0ba",
+      "summary": "Why new consumer products are so difficult to make successful."
+    }
+  }
+}
