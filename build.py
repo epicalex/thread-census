@@ -32,6 +32,8 @@ for key,count in theme_counts.most_common():
  label=theme_review['themes'][key]['label']
  theme_rows+=f'<li><div><span>{esc(label)}</span><b>{count} <small>({count/len(r["events"]):.0%})</small></b></div><span class="theme-track" aria-hidden="true"><span style="width:{100*count/len(r["events"]):.2f}%"></span></span></li>'
 s=r['stats'];template=(base/'template.html').read_text()
+snapshot=datetime.datetime.fromisoformat(s['run_at']).date()
+for key,value in {'SNAPSHOT_DATE':date(snapshot.isoformat()),'SNAPSHOT_DATE_LONG':snapshot.strftime('%-d %B %Y'),'LATEST_EPISODE_DATE':date(s['date_max']),'UNDATED':sum(not e['date'] for e in r['episodes']),'LINKED_EPISODES':sum(bool(e.get('youtube_url')) and e['thread_events']>0 for e in r['episodes'])}.items():template=template.replace('{{'+key+'}}',str(value))
 for key,value in {'HERO_BALL':render_ball(),'HERO_YARN':render_hero_yarn(),'FLIP_DIGITS':''.join(f'<span class="flip-digit" aria-hidden="true">{digit}</span>' for digit in str(since_pull).zfill(2)),'CHANCE':f"{100*s['episodes_with_events']/s['episodes_scanned']:.1f}",'THEME_ROWS':theme_rows,'SINCE_PULL_TEXT':since_pull,'SINCE_PULL':str(since_pull).zfill(2),'SINCE_FOLLOW':since_follow,'LAST_PULL':link(name(last_pull)+' · '+last_pull['timestamp'],last_pull['source_url']),'LAST_PULL_DATE':date(last_pull['date']),'LAST_PULL_TOPIC':esc(last_pull['summary']),'LEADERS':'\n'.join(leaders),'EVENTS':'\n'.join(events),'TOTAL':s['reviewed_events'],'PULL':s['literal_pull_events'],'FOLLOW':s['follow_events'],'EPISODES':s['episodes_with_events'],'SCANNED':s['episodes_scanned']}.items():template=template.replace('{{'+key+'}}',str(value))
 (base/'index.html').write_text(template)
 print(f'Built index.html: {len(leaders)} leaderboard rows, {len(events)} moments')

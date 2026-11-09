@@ -1,20 +1,20 @@
 {
   "stats": {
     "source_commit": null,
-    "run_at": "2026-10-30T22:22:46.895248+00:00",
-    "episodes_scanned": 323,
+    "run_at": "2026-11-09T20:33:33.162865+00:00",
+    "episodes_scanned": 325,
     "date_min": "2022-06-07",
-    "date_max": "2026-10-25",
+    "date_max": "2026-11-08",
     "reviewed_events": 173,
     "literal_pull_events": 31,
     "follow_events": 142,
     "qualifying_speaking_turns": 174,
     "episodes_with_events": 135,
-    "lenny_thread_turns": 338,
+    "lenny_thread_turns": 339,
     "pending_review": 0,
     "parse_errors": [],
     "source": "mcp",
-    "manifest_count": 323,
+    "manifest_count": 325,
     "missing_files": []
   },
   "episodes": [
@@ -1918,6 +1918,15 @@
       "thread_events": 0
     },
     {
+      "file": "hector-serrano.md",
+      "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
+      "guest": "Hector Serrano",
+      "date": "2026-11-01",
+      "post_url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+      "youtube_url": null,
+      "thread_events": 0
+    },
+    {
       "file": "heidi-helfand.md",
       "title": "The art and wisdom of changing teams | Heidi Helfand (author of Dynamic Reteaming)",
       "guest": "Heidi Helfand",
@@ -2869,6 +2878,15 @@
       "date": "2024-10-13",
       "post_url": "https://www.youtube.com/watch?v=BQM3Yq93nVc",
       "youtube_url": "https://www.youtube.com/watch?v=BQM3Yq93nVc",
+      "thread_events": 0
+    },
+    {
+      "file": "tulsee-doshi.md",
+      "title": "Why PMs are suddenly valuable again | Tulsee Doshi (Head of Product, Gemini)",
+      "guest": "Tulsee Doshi",
+      "date": "2026-11-08",
+      "post_url": "https://www.lennysnewsletter.com/p/what-it-actually-takes-to-build-frontier",
+      "youtube_url": null,
       "thread_events": 0
     },
     {

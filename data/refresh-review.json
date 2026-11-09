@@ -1,0 +1,89 @@
+{
+  "snapshot_date": "2026-11-09",
+  "previous_snapshot_date": "2026-10-30",
+  "retrieval": "All 325 podcast transcripts freshly retrieved through Lenny’s Data MCP list_content/read_content. The 323 previously archived transcript bodies and their episode metadata are unchanged.",
+  "new_episodes": [
+    "hector-serrano.md",
+    "tulsee-doshi.md"
+  ],
+  "new_candidate_reviews": [
+    {
+      "id": "hector-serrano.md@01:08:08",
+      "text_sha256": "90f4a8877dddc19fc350194c2d0cc95f35cf2cbefe07dbd74c60207e62fec132",
+      "decision": "other_thread_language",
+      "summary": "",
+      "note": "Introduces a final conversational thread about founder-led growth, without literal pull or follow wording. Excluded under the existing rule."
+    }
+  ],
+  "theme_review": "All 173 event IDs, text hashes and summaries are unchanged. Existing theme assignments revalidated and aggregation rerun.",
+  "stats": {
+    "chance_percent": 41.53846153846154,
+    "chance_numerator": 135,
+    "chance_denominator": 325,
+    "themes": [
+      {
+        "key": "ai",
+        "label": "AI and the changing shape of work",
+        "total": 62,
+        "pull": 5,
+        "follow": 57
+      },
+      {
+        "key": "teams",
+        "label": "How teams and leaders work",
+        "total": 40,
+        "pull": 8,
+        "follow": 32
+      },
+      {
+        "key": "growth",
+        "label": "Growth, experiments and product-market fit",
+        "total": 25,
+        "pull": 10,
+        "follow": 15
+      },
+      {
+        "key": "career",
+        "label": "Careers, learning and personal growth",
+        "total": 19,
+        "pull": 5,
+        "follow": 14
+      },
+      {
+        "key": "craft",
+        "label": "Product judgment and building",
+        "total": 16,
+        "pull": 0,
+        "follow": 16
+      },
+      {
+        "key": "founders",
+        "label": "Startups, markets and founder choices",
+        "total": 11,
+        "pull": 3,
+        "follow": 8
+      }
+    ],
+    "by_year": {
+      "2022": {
+        "pull": 7
+      },
+      "2023": {
+        "follow": 20,
+        "pull": 14
+      },
+      "2024": {
+        "follow": 35,
+        "pull": 5
+      },
+      "2025": {
+        "follow": 52,
+        "pull": 4
+      },
+      "2026": {
+        "follow": 35,
+        "pull": 1
+      }
+    }
+  }
+}
