@@ -1,0 +1,107 @@
+{
+  "snapshot_date": "2026-11-23",
+  "previous_snapshot_date": "2026-11-09",
+  "refresh_mode": "new_transcripts_only",
+  "retrieval": "Listed 327 archive entries; retrieved and analyzed only the two filenames absent from the saved 325-transcript results. Existing transcripts and their metadata were not re-fetched or re-reviewed.",
+  "new_episodes": [
+    "mona-sarantakos-v2.md",
+    "sherif-mansour.md"
+  ],
+  "new_candidate_reviews": {
+    "mona-sarantakos-v2.md@00:01:35": {
+      "text_sha256": "335eda26673cea70581c3ea5154555c151a79ea1a0ff2a0e92db690304140b4c",
+      "decision": "excluded",
+      "summary": "",
+      "note": "Threads is the social platform, not a conversational pull/follow."
+    },
+    "mona-sarantakos-v2.md@00:29:53": {
+      "text_sha256": "1eb6e40b675094e9fbab75cd23b5b415f41b839be043987996793404a9d7ff80",
+      "decision": "other_thread_language",
+      "summary": "",
+      "note": "Returns to an earlier topic without literal pull or follow wording."
+    },
+    "mona-sarantakos-v2.md@01:01:54": {
+      "text_sha256": "1bac60ccc6bc257d9c317f0d36915f85205bdc02b491077d65bb2fec5a3821d5",
+      "decision": "follow",
+      "summary": "How AI is changing product management, from rapid prototyping to a higher bar for product taste.",
+      "note": "Explicit follow wording. Context reviewed through the ensuing discussion of AI prototyping, internal tools and product taste."
+    }
+  },
+  "youtube_evidence": {
+    "mona-sarantakos-v2.md": {
+      "youtube_url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+      "source": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most"
+    }
+  },
+  "theme_review": "One new AI theme assignment, reviewed in the surrounding transcript discussion. The 173 previous assignments are retained.",
+  "stats": {
+    "chance_numerator": 136,
+    "chance_denominator": 327,
+    "chance_percent": 41.59021406727829,
+    "themes": [
+      {
+        "key": "ai",
+        "label": "AI and the changing shape of work",
+        "total": 63,
+        "pull": 5,
+        "follow": 58
+      },
+      {
+        "key": "teams",
+        "label": "How teams and leaders work",
+        "total": 40,
+        "pull": 8,
+        "follow": 32
+      },
+      {
+        "key": "growth",
+        "label": "Growth, experiments and product-market fit",
+        "total": 25,
+        "pull": 10,
+        "follow": 15
+      },
+      {
+        "key": "career",
+        "label": "Careers, learning and personal growth",
+        "total": 19,
+        "pull": 5,
+        "follow": 14
+      },
+      {
+        "key": "craft",
+        "label": "Product judgment and building",
+        "total": 16,
+        "pull": 0,
+        "follow": 16
+      },
+      {
+        "key": "founders",
+        "label": "Startups, markets and founder choices",
+        "total": 11,
+        "pull": 3,
+        "follow": 8
+      }
+    ],
+    "by_year": {
+      "2022": {
+        "pull": 7
+      },
+      "2023": {
+        "follow": 20,
+        "pull": 14
+      },
+      "2024": {
+        "follow": 35,
+        "pull": 5
+      },
+      "2025": {
+        "follow": 52,
+        "pull": 4
+      },
+      "2026": {
+        "follow": 36,
+        "pull": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+<rect width="1200" height="630" fill="#fed4b5"/>
+<g fill="#203630">
+<text x="64" y="72" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.5">LENNY’S PODCAST, ONE THREAD AT A TIME</text>
+<text x="60" y="183" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4">Just one</text>
+<text x="60" y="270" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" letter-spacing="-4">more thread.</text>
+<text x="64" y="329" font-family="Arial, Helvetica, sans-serif" font-size="24">Great conversations go a little deeper.</text>
+<text x="64" y="365" font-family="Arial, Helvetica, sans-serif" font-size="24">Lenny has a thread for that.</text>
+<text x="942" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="180" letter-spacing="-12">{{TOTAL}}</text>
+<text x="942" y="325" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22">Threads pulled or followed.</text>
+</g>
+<g transform="translate(0 365)">{{HERO_YARN}}{{HERO_BALL}}</g>
+<path d="M64 562H1136" stroke="#203630" stroke-opacity=".22"/>
+<g fill="#203630" font-family="Arial, Helvetica, sans-serif" font-size="15">
+<text x="64" y="597">An affectionate, unofficial thread census.</text>
+<text x="1136" y="597" text-anchor="end">Snapshot · {{SNAPSHOT_DATE}}</text>
+</g>
+</svg>

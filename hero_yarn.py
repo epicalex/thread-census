@@ -3,7 +3,7 @@ import math
 from bisect import bisect_left
 
 def render(curves=None, prefix="hero-ply"):
-    curves=curves or [((-20,80),(90,20),(70,180),(210,135)),((210,135),(350,90),(370,40),(430,100)),((430,100),(490,160),(440,195),(390,147)),((390,147),(340,99),(570,68),(690,130)),((690,130),(810,192),(860,200),(1020,90))]
+    curves=curves or [((-1200,80),(-800,-20),(-300,180),(-20,80)),((-20,80),(90,20),(70,180),(210,135)),((210,135),(350,90),(370,40),(430,100)),((430,100),(490,160),(440,195),(390,147)),((390,147),(340,99),(570,68),(690,130)),((690,130),(810,192),(860,200),(1020,90))]
     points=[]
     for a,b,c,d in curves:
         for k in range(301):
@@ -31,7 +31,7 @@ def render(curves=None, prefix="hero-ply"):
                 if 0<s<total:
                     over=i if k%2==0 else j;under=j if over==i else i
                     gaps[under].append(f'<path d="{path(over,s-2,s+2)}" stroke="black" stroke-width="2.9"/>')
-    defs=''.join(f'<mask id="{prefix}-{i}" maskUnits="userSpaceOnUse" x="-200" y="-200" width="1500" height="500"><rect x="-200" y="-200" width="1500" height="500" fill="white"/>'+''.join(gaps[i])+'</mask>' for i in range(3))
+    defs=''.join(f'<mask id="{prefix}-{i}" maskUnits="userSpaceOnUse" x="-1500" y="-200" width="3000" height="500"><rect x="-1500" y="-200" width="3000" height="500" fill="white"/>'+''.join(gaps[i])+'</mask>' for i in range(3))
     return '<defs>'+defs+'</defs>'+''.join(f'<path d="{path(i,0,total)}" stroke="{color}" stroke-width="1.9" stroke-linecap="round" mask="url(#{prefix}-{i})"/>' for i,color in enumerate(['#bd6038','#e88a50','#f4b17b']))
 
 

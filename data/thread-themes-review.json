@@ -1,5 +1,5 @@
 {
-  "method": "Editorial review of the 173 previously context-reviewed event summaries, assigning one primary topic per moment. All 31 literal-pull speaking turns were also reread. Categories are interpretive, not validated statistical clusters. AI takes priority when it is the central context, so the topic totals depend on this taxonomy.",
+  "method": "Editorial review of all 174 context-reviewed event summaries, assigning one primary topic per moment. The original 173 assignments are retained; the new Mona Sarantakos moment was reviewed in its transcript context. All 31 literal-pull speaking turns were reread in the original theme review. Categories are interpretive, not validated statistical clusters. AI takes priority when it is the central context, so the topic totals depend on this taxonomy.",
   "themes": {
     "ai": {
       "label": "AI and the changing shape of work",
@@ -891,6 +891,11 @@
       "theme": "founders",
       "text_sha256": "f2a7e508771ad734e2d4be6765a55f4a9d54f719e9a750c2edb60af6793cc0ba",
       "summary": "Why new consumer products are so difficult to make successful."
+    },
+    "mona-sarantakos-v2.md@01:01:54": {
+      "theme": "ai",
+      "text_sha256": "1bac60ccc6bc257d9c317f0d36915f85205bdc02b491077d65bb2fec5a3821d5",
+      "summary": "How AI is changing product management, from rapid prototyping to a higher bar for product taste."
     }
   }
 }

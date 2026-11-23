@@ -1,21 +1,25 @@
 {
   "stats": {
     "source_commit": null,
-    "run_at": "2026-11-09T20:33:33.162865+00:00",
-    "episodes_scanned": 325,
+    "run_at": "2026-11-23T22:37:17.583533+00:00",
+    "episodes_scanned": 327,
     "date_min": "2022-06-07",
-    "date_max": "2026-11-08",
-    "reviewed_events": 173,
+    "date_max": "2026-11-22",
+    "reviewed_events": 174,
     "literal_pull_events": 31,
-    "follow_events": 142,
-    "qualifying_speaking_turns": 174,
-    "episodes_with_events": 135,
-    "lenny_thread_turns": 339,
+    "follow_events": 143,
+    "qualifying_speaking_turns": 175,
+    "episodes_with_events": 136,
+    "lenny_thread_turns": 342,
     "pending_review": 0,
     "parse_errors": [],
     "source": "mcp",
-    "manifest_count": 325,
-    "missing_files": []
+    "manifest_count": 327,
+    "missing_files": [],
+    "previous_run_at": "2026-11-09T20:33:33.162865+00:00",
+    "refresh_mode": "new_transcripts_only",
+    "new_transcripts_scanned": 2,
+    "previous_transcripts_reused": 325
   },
   "episodes": [
     {
@@ -979,6 +983,15 @@
       "date": "2026-01-04",
       "post_url": "https://www.youtube.com/watch?v=twzLDx9iers",
       "youtube_url": "https://www.youtube.com/watch?v=twzLDx9iers",
+      "thread_events": 1
+    },
+    {
+      "file": "mona-sarantakos-v2.md",
+      "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+      "guest": "Mona Sarantakos",
+      "date": "2026-11-15",
+      "post_url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "youtube_url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
       "thread_events": 1
     },
     {
@@ -2743,6 +2756,15 @@
       "date": "2024-12-08",
       "post_url": "https://www.youtube.com/watch?v=UyWTDmDjNy4",
       "youtube_url": "https://www.youtube.com/watch?v=UyWTDmDjNy4",
+      "thread_events": 0
+    },
+    {
+      "file": "sherif-mansour.md",
+      "title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
+      "guest": "Sherif Mansour",
+      "date": "2026-11-22",
+      "post_url": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
+      "youtube_url": null,
       "thread_events": 0
     },
     {
@@ -5712,6 +5734,22 @@
       "text_sha256": "6aefe41e2c7d880c2fb7a184622fd1a5123b6c0ce285bb97f1364ea1e9c086d3",
       "post_url": null,
       "source_url": "https://www.youtube.com/watch?v=0P8LMyeYl1U&t=2201s"
+    },
+    {
+      "id": "mona-sarantakos-v2.md@01:01:54",
+      "file": "mona-sarantakos-v2.md",
+      "guest": "Mona Sarantakos",
+      "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+      "date": "2026-11-15",
+      "timestamp": "01:01:54",
+      "seconds": 3714,
+      "line": 385,
+      "decision": "follow",
+      "summary": "How AI is changing product management, from rapid prototyping to a higher bar for product taste.",
+      "note": "Explicit follow wording. Context reviewed through the ensuing discussion of AI prototyping, internal tools and product taste.",
+      "text_sha256": "1bac60ccc6bc257d9c317f0d36915f85205bdc02b491077d65bb2fec5a3821d5",
+      "post_url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "source_url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ&t=3714s"
     }
   ]
 }

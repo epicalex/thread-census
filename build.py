@@ -10,9 +10,10 @@ def name(e):return 'Noam Segal (AI sentiment survey)' if e['file']=='noam-segal.
 def date(s):return datetime.date.fromisoformat(s).strftime('%d %b %Y') if s else 'Undated'
 def link(text,url):return f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{esc(text)} <span aria-hidden="true">↗</span></a>' if url else esc(text)
 leaders=[]
+max_threads=max((e['thread_events'] for e in r['episodes']),default=1) or 1
 for e in sorted(r['episodes'],key=lambda e:(-e['thread_events'],name(e))):
  if e['thread_events']<2:continue
- leaders.append(f'<tr><td>{link(name(e),e.get("youtube_url"))}</td><td><time datetime="{esc(e["date"])}">{date(e["date"])}</time></td><td class="score"><span class="bar" style="--amount:{e["thread_events"]/4*100}%"></span><b>{e["thread_events"]}</b></td></tr>')
+ leaders.append(f'<tr><td>{link(name(e),e.get("youtube_url"))}</td><td><time datetime="{esc(e["date"])}">{date(e["date"])}</time></td><td class="score"><span class="bar" style="--amount:{e["thread_events"]/max_threads:.4f}"></span><b>{e["thread_events"]}</b></td></tr>')
 events=[]
 for e in sorted(sorted(r['events'],key=lambda e:(name(e),e['seconds'] or 0)),key=lambda e:e['date'] or '',reverse=True):
  events.append(f'<tr data-kind="{e["decision"]}"><td><strong>{esc(name(e))}</strong><time class="guest-date" datetime="{esc(e["date"])}">{date(e["date"])}</time></td><td>{link(e["timestamp"],e["source_url"])}</td><td><span class="tag {e["decision"]}">{e["decision"]}</span></td><td>{esc(e["summary"])}</td></tr>')
@@ -31,9 +32,17 @@ theme_rows=''
 for key,count in theme_counts.most_common():
  label=theme_review['themes'][key]['label']
  theme_rows+=f'<li><div><span>{esc(label)}</span><b>{count} <small>({count/len(r["events"]):.0%})</small></b></div><span class="theme-track" aria-hidden="true"><span style="width:{100*count/len(r["events"]):.2f}%"></span></span></li>'
+(base/'yarn-ball.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="1014 22 132 132">'+render_ball()+'</svg>\n')
 s=r['stats'];template=(base/'template.html').read_text()
 snapshot=datetime.datetime.fromisoformat(s['run_at']).date()
 for key,value in {'SNAPSHOT_DATE':date(snapshot.isoformat()),'SNAPSHOT_DATE_LONG':snapshot.strftime('%-d %B %Y'),'LATEST_EPISODE_DATE':date(s['date_max']),'UNDATED':sum(not e['date'] for e in r['episodes']),'LINKED_EPISODES':sum(bool(e.get('youtube_url')) and e['thread_events']>0 for e in r['episodes'])}.items():template=template.replace('{{'+key+'}}',str(value))
-for key,value in {'HERO_BALL':render_ball(),'HERO_YARN':render_hero_yarn(),'FLIP_DIGITS':''.join(f'<span class="flip-digit" aria-hidden="true">{digit}</span>' for digit in str(since_pull).zfill(2)),'CHANCE':f"{100*s['episodes_with_events']/s['episodes_scanned']:.1f}",'THEME_ROWS':theme_rows,'SINCE_PULL_TEXT':since_pull,'SINCE_PULL':str(since_pull).zfill(2),'SINCE_FOLLOW':since_follow,'LAST_PULL':link(name(last_pull)+' · '+last_pull['timestamp'],last_pull['source_url']),'LAST_PULL_DATE':date(last_pull['date']),'LAST_PULL_TOPIC':esc(last_pull['summary']),'LEADERS':'\n'.join(leaders),'EVENTS':'\n'.join(events),'TOTAL':s['reviewed_events'],'PULL':s['literal_pull_events'],'FOLLOW':s['follow_events'],'EPISODES':s['episodes_with_events'],'SCANNED':s['episodes_scanned']}.items():template=template.replace('{{'+key+'}}',str(value))
+for key,value in {'HERO_BALL':'<image href="yarn-ball.svg" x="1014" y="22" width="132" height="132"/>','HERO_YARN':render_hero_yarn(),'FLIP_DIGITS':''.join(f'<span class="flip-digit" aria-hidden="true">{digit}</span>' for digit in str(since_pull).zfill(2)),'CHANCE':f"{100*s['episodes_with_events']/s['episodes_scanned']:.1f}",'THEME_ROWS':theme_rows,'SINCE_PULL_TEXT':since_pull,'SINCE_PULL':str(since_pull).zfill(2),'SINCE_FOLLOW':since_follow,'LAST_PULL':link(name(last_pull)+' · '+last_pull['timestamp'],last_pull['source_url']),'LAST_PULL_DATE':date(last_pull['date']),'LAST_PULL_TOPIC':esc(last_pull['summary']),'LEADERS':'\n'.join(leaders),'EVENTS':'\n'.join(events),'TOTAL':s['reviewed_events'],'PULL':s['literal_pull_events'],'FOLLOW':s['follow_events'],'EPISODES':s['episodes_with_events'],'SCANNED':s['episodes_scanned']}.items():template=template.replace('{{'+key+'}}',str(value))
 (base/'index.html').write_text(template)
 print(f'Built index.html: {len(leaders)} leaderboard rows, {len(events)} moments')
+
+# Keep the editable sharing card in step with the same reviewed snapshot as the page.
+card=(base/'social-card-template.svg').read_text()
+for key,value in {'TOTAL':s['reviewed_events'],'SNAPSHOT_DATE':date(snapshot.isoformat()),'HERO_YARN':render_hero_yarn(),'HERO_BALL':render_ball()}.items():
+ card=card.replace('{{'+key+'}}',str(value))
+(base/'social-card.svg').write_text(card)
+print('Built social-card.svg; run node render-assets.mjs to refresh the PNG and icons')
